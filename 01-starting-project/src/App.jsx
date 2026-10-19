@@ -1,54 +1,25 @@
-import Header from "./Header";
-import Coreconcept from "./coreConcept";
-import componentsImg from '.assets/componentsImg'
-import { CORE_CONCEPTS } from "./data";
 function App() {
   return (
     <div>
-       <Header />
-       <Header/>
-       <Header/>
-       <Me/>
-       
-
+      <Header />
       <main>
-
-
-        <section id = "core-concepts">
-        <h2>Time to get started!</h2>
-        <ul><Coreconcept{...CORE_CONCEPTS[0]}/>
-         <ul><Coreconcept{...CORE_CONCEPTS[1]}/>
-          <ul><Coreconcept{...CORE_CONCEPTS[2]}/>
-           <ul><Coreconcept{...CORE_CONCEPTS[3]}/>
-
-        </ul>
+        <section id="core-concepts">
+          <h2>Time to get started!</h2>
+          <ul>
+            <CoreConcept {...CORE_CONCEPTS[0]}/>
+            <CoreConcept {...CORE_CONCEPTS[1]}/>
+            <CoreConcept {...CORE_CONCEPTS[2]}/>
+            <CoreConcept {...CORE_CONCEPTS[3]}/>
+          </ul>
+        </section>
+        <section id="examples">
+          <h2>Examples</h2>
+          <menu>
+            
+          </menu>
         </section>
       </main>
     </div>
+
   );
 }
-
-        
-function Me(){
-  Me = {
-    first: "Ladania",
-    Age: 20,
-    Major: IT,
-  };
-
-  return(
-    <div>
-      <ul>
-        Me
-        <li>First: {Me.first} </li>
-        <li>Age: {Me.Age} </li>
-        <li>Major: {Me.Major}</li>
-      </ul>
-    </div>
-    
-
-  );
-  }
-
-
-export default App;
