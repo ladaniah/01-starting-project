@@ -10,7 +10,7 @@ export default function CoreConcepts(){
         //     {CORE_CONCEPTS.map((conceptItem)=><CoreConcept {...conceptItem}/>)}
         //     </ul>
         // </section>
-        <Section title="Time to get started">
+        <Section id='core-concepts' title="Time to get started">
             <ul>
                 {CORE_CONCEPTS.map((conceptItem)=><CoreConcept {...conceptItem}/>)}
             </ul>
